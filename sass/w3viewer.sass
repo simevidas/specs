@@ -13,6 +13,7 @@ html
 
 body
   height: 100%
+  overflow: hidden
   font-family: $Droid
   font-size: 13px
   cursor: default
@@ -28,39 +29,12 @@ code
 
 // right side **********************************************************************************************************
 
-#pagenav
-  position: fixed
-  top: 50px
-  left: $panelWidth
-  width: $pagenavWidth
-  text-align: center
-  text-shadow: 1px 1px 0 white
-  h1
-    font-family: $OpenSansCondensed
-    font-weight: bold
-    font-size: 42px
-    margin-bottom: 15px
-  ul
-    margin: 25px auto 0
-    width: 160px
-    font-size: 14px
-  li
-    background-color: #eee
-    margin-bottom: 15px
-    padding: 12px 0
-  .signature
-    margin-top: 25px
-  a
-    text-decoration: none
-    &:hover
-      text-decoration: underline
-
 #page
   background-color: #fefefe
-  padding: 1em 2em
+  padding: 1em 2.2em 1.6em
   margin-top: 50px
-  margin-bottom: 50px
-  margin-left: $panelWidth + $pagenavWidth
+  margin-right: 50px
+  margin-left: auto
   width: 600px
   border: 2px solid gray
   font-size: 14px
@@ -83,7 +57,7 @@ code
     line-height: 1.4
   em
     padding: 0 3px
-    background-color: rgba(gold, 0.4)
+    background-color: #FFF2CC
   a
     text-decoration: none
     &:hover
@@ -93,9 +67,6 @@ code
       margin: 1em 0
       padding: 0.5em 1em
       background-color: #eee
-
-#disqus_thread
-  margin-top: 20px
 
 #overlay
   display: none
