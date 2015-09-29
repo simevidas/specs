@@ -1,5 +1,5 @@
 {
-  "name": "w3viewer-site",
+  "name": "specs",
   "author": "Šime Vidas",
   "devDependencies": {
     "grunt": "~0.4.2",
