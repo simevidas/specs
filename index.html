@@ -1,0 +1,226 @@
+﻿<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>w3viewer</title>
+    <meta name="description" content="w3viewer is a convenient interface for viewing web standards">
+    <!--
+
+                                  ,|
+                                 //|                              ,|
+                               //,/                             -~ |
+                             // / |                         _-~   /  ,
+                           /'/ / /                       _-~   _/_-~ |
+                          ( ( / /'                   _ -~     _-~ ,/'
+                           \~\/'/|             __--~~__--\ _-~  _/,
+                   ,,)))))));, \/~-_     __--~~  --~~  __/~  _-~ /
+                __))))))))))))));,>/\   /        __--~~  \-~~ _-~
+               -\(((((''''(((((((( >~\/     --~~   __--~' _-~ ~|
+      --==//////((''  .     `)))))), /     ___---~~  ~~\~~__--~                The source code of w3viewer.com is available
+              ))| @    ;-.     (((((/           __--~~~'~~/                      on GitHub: github.com/simevidas/w3viewer-site
+              ( `|    /  )      )))/      ~~~~~__\__---~~__--~~--_
+                 |   |   |       (/      ---~~~/__-----~~  ,;::'  \         ,
+                 o_);   ;        /      ----~~/           \,-~~~\  |       /|
+                       ;        (      ---~~/         `:::|      |;|      < >
+                      |   _      `----~~~~'      /      `:|       \;\_____//
+                ______/\/~    |                 /        /         ~------~
+              /~;;.____/;;'  /          ___----(   `;;;/
+             / //  _;______;'------~~~~~    |;;/\    /
+            //  | |                        /  |  \;;,\
+           (<_  | ;                      /',/-----'  _>
+            \_| ||_                     //~;~~~~~~~~~
+                `\_|                   (,~~
+                                        \~\
+                                         ~~
+
+    -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-7817762-4']);
+        _gaq.push(['_setDomainName', 'w3viewer.com']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans:400|Open+Sans+Condensed:300,700" rel="stylesheet">
+    <link href="/css/w3viewer.css" rel="stylesheet">
+</head>
+<body>
+    <div id="pagenav">
+        <h1>w3viewer</h1>
+        <div>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="simevidas">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+        <ul>
+            <li>About</li>
+            <li>Usage</li>
+            <li>Corrections</li>
+            <li>Twitter</li>
+            <li>Comments</li>
+        </ul>
+        <div class="signature">
+            w3viewer by <a href="https://twitter.com/simevidas">@simevidas</a>
+        </div>
+    </div>
+    <div id="page">
+        <h2>About</h2>
+        <p>
+            The purpose of w3viewer is to provide a good overview of the web standards, including standards about HTML, CSS, and the JS APIs.
+        </p>
+        <h2>Usage</h2>
+        <p>
+            The blue area on the left is the panel. Notice the tabbed navigation on the top of the panel. Each tab represents one catergory. Each category contains a list of entries sorted into groups. <em>Hover over entries</em> to display their corresponding info boxes.
+        </p>
+        <p>
+            <em>Click on an entry</em> to open the default document for that entry - this is usually the latest W3C TR. Notice how each info box contains one or more resources at the bottom. To open these additional resources, <em>press the corresponding key command.</em>
+        </p>
+        <p>
+            Once a resource is opened, <em>click on the entry in the panel again to close it</em>. You will notice a red "X" button at the right end of the entry - you don't need to target that button, just click anywhere on the entry.
+        </p>
+        <h2>Auxiliary documents</h2>
+        <p>
+            As part of my work on w3viewer, I maintain several Google documents:
+        </p>
+        <ul class="list">
+            <li>
+                <h3>OWP Daily Digest</h3>
+                <p>
+                    A Open Web Platform daily digest. Each day I go through several hundred tweets.
+                </p>
+            </li>
+            <li>
+                <h3>Feature additions in web-browsers</h3>
+                <p>Contains information about which features are added to the desktop web-browsers.</p>
+            </li>
+        </ul>
+        <h2>Corrections</h2>
+        <p>
+            The data for w3Viewer is located in a JSON file. You can access this file directly at <a href="http://w3viewer.com/json/w3viewer.json">here</a>. You can also view this file on GitHub. If you notice a mistake of any kind in the information provided on w3viewer, please be a "good guy Greg" and let me know. You can submit an issue on GiHub, or just contact me directly via e-mail, twitter, etc.
+        </p>
+        <h2>Feedback</h2>
+        <p>
+            If you have constructive feedback, please let me know:
+        </p>
+
+        <!-- DISQUS -->
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'w3viewer'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        <!-- DISQUS END -->
+
+    </div>
+    <script id="template" type="text/x-handlebars-template">
+        <div id="panel">
+            <ul id="nav">
+                {{#each categories}}
+                <li><span>{{name}}</span></li>
+                {{/each}}
+            </ul>
+            <div id="content">
+                <ul id="links">
+                    {{#each categories}}
+                    <li>
+                        <ul class="category" data-category-name="{{name}}">
+                            {{#each groups}}
+                            <li>
+                                <h2>{{name}}</h2>
+                                <ul class="group" data-group-name="{{name}}">
+                                    {{#each specs}}
+                                    <li data-title="{{title}}"><p>{{{markdown title}}}</p></li>
+                                    {{/each}}
+                                </ul>
+                            </li>
+                            {{/each}}
+                        </ul>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div id="scrollbar"><div></div></div>
+        </div>
+        <div id="doc"></div>
+        <div id="hide"><p></p></div>
+        <div id="overlay"></div>
+        <div id="info_box"></div>
+    </script>
+    <script id="info_box_template" type="text/x-handlebars-template">
+        <h2>{{{markdown title}}}</h2>
+        <div class="ib_status">
+            <div class="ib_status_label status_{{status}}">{{hash status "status"}}</div>
+            <p class="ib_status_dates">{{span_helper span}}</p>
+        </div>
+        <p class="ib_subtitle">{{hash type "type"}} by {{{wg_helper wg}}}</p>
+        <div class="ib_description">
+            <ul class="ib_description_list">
+                {{#each description}}
+                <li>{{{markdown this}}}</li>
+                {{/each}}
+            </ul>
+            {{#if notes}}
+            <ul class="ib_notes">
+                {{#each notes}}
+                <li>{{{markdown this}}}</li>
+                {{/each}}
+            </ul>
+            {{/if}}
+        </div>
+        {{#if implementation}}
+        {{#with implementation}}
+        <div class="ib_implementations impl_{{status}}">
+            <p class="ib_impl_status">{{hash status "implementation"}}</p>
+            <ul class="ib_impl_notes">
+            {{#each notes}}
+                <li>{{{markdown this}}}</li>
+            {{/each}}
+            </ul>
+        </div>
+        {{#if raw}}
+        <p class="ib_impl_raw">
+            <b>Note:</b> The above implementation information is <b>incomplete</b>. I'm currently working full-time on providing complete, and accurate implementation information <b>for all entries</b>.
+        </p>
+        {{/if}}
+        {{/with}}
+        {{/if}}
+        {{#if temp2}}
+        <ul style="font-size:9px;margin:1em;border:1px solid red;padding:1em;">
+            {{#each temp}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        {{/if}}
+        <ul class="ib_resources">
+            {{#each resources}}
+            <li><kbd>{{i}}</kbd> {{{hash text "resource"}}}, <a href="http://{{url}}">http://{{url}}</a></li>
+            {{/each}}
+        </ul>
+        <!--
+        <p class="info_box_labels">
+            {{#if status}}<span class="info_box_status status_{{status}}">{{hash status "status"}}</span>{{/if}}
+            {{#if implemented}}<span class="info_box_implemented impl_{{implemented}}">{{hash implemented "implemented"}}</span>{{/if}}
+        </p>
+        -->
+    </script>
+    <script src="/js/libs/jquery-1.9.1.min.js"></script>
+    <script src="/js/libs/jquery.mousewheel-3.0.6.js"></script>
+    <script src="/js/libs/handlebars-1.0.rc.1.js"></script>
+    <script src="/js/libs/Markdown.Converter.js"></script>
+    <script src="/js/w3viewer.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+@charset "utf-8"
+
+$default: #333
+$ecmazingBlue: #00599b
+$stackBlue: #07c
+$goGreen: mediumseagreen
+
+$Arial: Arial, "Helvetica Neue", Helvetica, sans-serif
+$Droid: "Droid Sans", $Arial
+$Tahoma: Tahoma, sans-serif
+$Consolas: Consolas, Monaco, monospace
+$OpenSansCondensed: "Open Sans Condensed", sans-serif
+
+
+*:focus
+  outline: none
+
+@mixin unselectable
+  -moz-user-select: none // TODO: Does only Firefox show the caret on click?
+  *
+    -moz-user-select: none
+
+
+// pages ***************************************************************************************************************
+
+@mixin title
+  background: $ecmazingBlue
+  font-family: $OpenSansCondensed
+  font-size: 24px
+  padding-left: 8px
+  color: white
+  height: 38px
+  a
+    color: gold
+    font-weight: bold
+    text-decoration: none
+    &:hover
+      color: #ff69b4
+
+
+// YUI 3 CSS RESET *****************************************************************************************************
+
+html
+  color: $default
+  background: #FFF
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td 
+  margin: 0
+  padding: 0
+
+table 
+  border-collapse: collapse
+  border-spacing: 0
+
+fieldset, img 
+  border: 0
+
+address, caption, cite, code, dfn, em, strong, th, var 
+  font-style: normal
+  font-weight: normal
+
+ol, ul 
+  list-style: none
+
+caption, th 
+  text-align: left
+
+h1, h2, h3, h4, h5, h6 
+  font-size: 100%
+  font-weight: normal
+
+q:before, q:after
+  content: ''
+
+abbr, acronym
+  border: 0
+  font-variant: normal
+
+sup
+  vertical-align: text-top
+
+sub
+  vertical-align: text-bottom
+
+input, textarea, select
+  font-family: inherit
+  font-size: inherit
+  font-weight: inherit
+
+input, textarea, select
+  *font-size: 100%
+
+legend
+  color: $default
