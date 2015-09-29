@@ -15,7 +15,7 @@ module.exports = function (grunt) {
                     'outputStyle': 'expanded'
                 },
                 files: {
-                    'css/w3viewer.css': 'sass/w3viewer.sass'
+                    'styles/w3viewer.css': 'styles/w3viewer.sass'
                 }
             }
         },
