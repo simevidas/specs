@@ -6,7 +6,7 @@ jQuery(function ( $ ) {
         PERMANENT_INFO_BOX = false, // should the info-box stay visible even once the mouse cursor leaves the panel item
         undefined = void 0;
 
-    $.getJSON( '/json/w3viewer.json', function ( data ) {
+    $.getJSON( 'json/w3viewer.json', function ( data ) {
 
         // Markdown stuff; pushed to the top because I need Markdown to render the panel on page init
         var MD_to_HTML = (function () {
